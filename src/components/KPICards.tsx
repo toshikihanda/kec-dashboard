@@ -32,8 +32,8 @@ const cards: {
     key: "totalResults",
     label: "総結果数（リード）",
     icon: Target,
-    color: "text-teal-600",
-    bg: "bg-teal-50",
+    color: "text-amber-600",
+    bg: "bg-amber-50",
     format: (v) => v.toLocaleString(),
   },
   {
@@ -48,8 +48,8 @@ const cards: {
     key: "averageCPA",
     label: "平均CPA",
     icon: Eye,
-    color: "text-amber-600",
-    bg: "bg-amber-50",
+    color: "text-teal-600",
+    bg: "bg-teal-50",
     format: (v) => `¥${Math.round(v).toLocaleString()}`,
   },
 ];
