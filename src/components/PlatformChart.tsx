@@ -14,7 +14,7 @@ interface Props {
   data: PlatformAggregation[];
 }
 
-const COLORS = ["#3b82f6", "#ec4899", "#f59e0b", "#8b5cf6", "#10b981"];
+const COLORS = ["#2563eb", "#60a5fa", "#93c5fd", "#475569", "#94a3b8"];
 
 export default function PlatformChart({ data }: Props) {
   const chartData = data.map((d) => ({

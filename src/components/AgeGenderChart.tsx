@@ -46,14 +46,14 @@ export default function AgeGenderChart({ data }: Props) {
               dataKey="male"
               name="男性"
               stackId="a"
-              fill="#3b82f6"
+              fill="#2563eb"
               radius={[0, 0, 0, 0]}
             />
             <Bar
               dataKey="female"
               name="女性"
               stackId="a"
-              fill="#ec4899"
+              fill="#93c5fd"
               radius={[0, 0, 0, 0]}
             />
             <Bar

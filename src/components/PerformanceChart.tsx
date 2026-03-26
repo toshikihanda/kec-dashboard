@@ -94,7 +94,7 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 yAxisId="left"
                 dataKey="amountSpent"
                 name="消化金額"
-                fill="#6366f1"
+                fill="#2563eb"
                 radius={[6, 6, 0, 0]}
                 opacity={0.85}
               />
@@ -103,9 +103,9 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 type="monotone"
                 dataKey="results"
                 name="結果数"
-                stroke="#f97316"
+                stroke="#1e3a5f"
                 strokeWidth={3}
-                dot={{ r: 5, fill: "#f97316", stroke: "#fff", strokeWidth: 2 }}
+                dot={{ r: 5, fill: "#1e3a5f", stroke: "#fff", strokeWidth: 2 }}
                 activeDot={{ r: 7 }}
               />
             </ComposedChart>
@@ -115,7 +115,7 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
         {/* CPAサブチャート */}
         <div className="mt-2 pt-4 border-t border-gray-100">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-3 h-3 rounded-full bg-red-500" />
+            <div className="w-3 h-3 rounded-full bg-slate-500" />
             <span className="text-sm font-medium text-gray-700">CPA推移</span>
             <span className="text-xs text-gray-400 ml-auto">
               平均CPA: ¥{Math.round(monthAvgCpa).toLocaleString()}
@@ -126,8 +126,8 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
               <AreaChart data={monthChart}>
                 <defs>
                   <linearGradient id="cpaGradientMonth" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#ef4444" stopOpacity={0.2} />
-                    <stop offset="100%" stopColor="#ef4444" stopOpacity={0.02} />
+                    <stop offset="0%" stopColor="#64748b" stopOpacity={0.2} />
+                    <stop offset="100%" stopColor="#64748b" stopOpacity={0.02} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
@@ -153,10 +153,10 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 <Area
                   type="monotone"
                   dataKey="cpa"
-                  stroke="#ef4444"
+                  stroke="#64748b"
                   strokeWidth={2.5}
                   fill="url(#cpaGradientMonth)"
-                  dot={{ r: 5, fill: "#ef4444", stroke: "#fff", strokeWidth: 2 }}
+                  dot={{ r: 5, fill: "#64748b", stroke: "#fff", strokeWidth: 2 }}
                   activeDot={{ r: 7 }}
                 />
               </AreaChart>
@@ -205,7 +205,7 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 yAxisId="left"
                 dataKey="amountSpent"
                 name="消化金額"
-                fill="#6366f1"
+                fill="#2563eb"
                 radius={[4, 4, 0, 0]}
                 opacity={0.85}
               />
@@ -214,9 +214,9 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 type="monotone"
                 dataKey="results"
                 name="結果数"
-                stroke="#f97316"
+                stroke="#1e3a5f"
                 strokeWidth={2.5}
-                dot={{ r: 3, fill: "#f97316", stroke: "#fff", strokeWidth: 2 }}
+                dot={{ r: 3, fill: "#1e3a5f", stroke: "#fff", strokeWidth: 2 }}
                 activeDot={{ r: 6 }}
               />
             </ComposedChart>
@@ -226,7 +226,7 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
         {/* CPAサブチャート */}
         <div className="mt-2 pt-4 border-t border-gray-100">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-3 h-3 rounded-full bg-red-500" />
+            <div className="w-3 h-3 rounded-full bg-slate-500" />
             <span className="text-sm font-medium text-gray-700">CPA推移</span>
             <span className="text-xs text-gray-400 ml-auto">
               平均CPA: ¥{Math.round(weekAvgCpa).toLocaleString()}
@@ -237,8 +237,8 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
               <AreaChart data={weekChart}>
                 <defs>
                   <linearGradient id="cpaGradientWeek" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#ef4444" stopOpacity={0.2} />
-                    <stop offset="100%" stopColor="#ef4444" stopOpacity={0.02} />
+                    <stop offset="0%" stopColor="#64748b" stopOpacity={0.2} />
+                    <stop offset="100%" stopColor="#64748b" stopOpacity={0.02} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
@@ -268,10 +268,10 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 <Area
                   type="monotone"
                   dataKey="cpa"
-                  stroke="#ef4444"
+                  stroke="#64748b"
                   strokeWidth={2}
                   fill="url(#cpaGradientWeek)"
-                  dot={{ r: 3, fill: "#ef4444", stroke: "#fff", strokeWidth: 2 }}
+                  dot={{ r: 3, fill: "#64748b", stroke: "#fff", strokeWidth: 2 }}
                   activeDot={{ r: 6 }}
                 />
               </AreaChart>
