@@ -103,9 +103,9 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 type="monotone"
                 dataKey="results"
                 name="結果数"
-                stroke="#0891b2"
+                stroke="#d97706"
                 strokeWidth={3}
-                dot={{ r: 5, fill: "#0891b2", stroke: "#fff", strokeWidth: 2 }}
+                dot={{ r: 5, fill: "#d97706", stroke: "#fff", strokeWidth: 2 }}
                 activeDot={{ r: 7 }}
               />
             </ComposedChart>
@@ -214,9 +214,9 @@ export default function PerformanceChart({ monthlyData, weeklyData }: Props) {
                 type="monotone"
                 dataKey="results"
                 name="結果数"
-                stroke="#0891b2"
+                stroke="#d97706"
                 strokeWidth={2.5}
-                dot={{ r: 3, fill: "#0891b2", stroke: "#fff", strokeWidth: 2 }}
+                dot={{ r: 3, fill: "#d97706", stroke: "#fff", strokeWidth: 2 }}
                 activeDot={{ r: 6 }}
               />
             </ComposedChart>
